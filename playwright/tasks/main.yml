@@ -7,6 +7,6 @@
   debug:
     msg: "The pod name is {{pod_name.stdout}} "
 
-- name: exec in this pod
+- name: exec in this pod and run test
   shell:
     kubectl exec {{pod_name.stdout}} -- /bin/bash -c "node test.js"
