@@ -1,4 +1,4 @@
 ---
-- hosts: localhost
+- hosts: eagle301.startdedicated.com
   roles:
     - playwright
