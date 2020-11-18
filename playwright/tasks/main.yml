@@ -9,4 +9,4 @@
 
 - name: exec in this pod and run test
   shell:
-    kubectl exec {{pod_name.stdout}} -- /bin/bash -c "cd /home/pwuser/files |node test.js"
+    kubectl exec {{pod_name.stdout}} -- /bin/bash -c "cd /home/pwuser/files && node test.js"
